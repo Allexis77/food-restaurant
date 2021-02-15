@@ -33,6 +33,10 @@ function timer(TimerSelector, deadlineTime) {
       seconds.innerHTML = t.seconds;
 
       if (t.total <= 0) {
+        days.innerHTML = 0;
+        hours.innerHTML = 0;
+        minutes.innerHTML = 0;
+        seconds.innerHTML = 0;
         clearInterval(timeInterval);
       }
     }

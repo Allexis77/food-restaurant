@@ -8,11 +8,11 @@ import slider from './components/slider';
 import {openModal} from './components/modal';
 
 window.addEventListener('DOMContentLoaded', function() {
-    const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 50000);
+    const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300000);
 
     tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
     modal('[data-modal]', '.modal', modalTimerId);
-    timer('.timer', '2020-06-11');
+    timer('.timer', '2021-06-11');
     cards();
     calc();
     forms('form', modalTimerId);
